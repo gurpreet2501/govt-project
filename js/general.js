@@ -491,13 +491,14 @@
 			};
 			var initMap = function() {
 				var contactdata = $('#contact-map').data('content');
+				console.log(document.getElementById("contact-map"));
 				var map = new google.maps.Map(document.getElementById("contact-map"), mapOptions);
 				var bounds = new google.maps.LatLngBounds();
 				var myIcon = new google.maps.MarkerImage("images/marker-pin.svg", null, null, null, new google.maps.Size(50,62));
 				var marker = new google.maps.Marker({
 					position: new google.maps.LatLng(31.434024,75.5055621),
 					map: map,
-					title: 'MyBio',
+					title: 'Jang-e-Azadi',
 					icon: myIcon
 				});
 				var info = new SnazzyInfoWindow({
